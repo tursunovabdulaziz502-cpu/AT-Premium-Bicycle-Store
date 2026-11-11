@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AT - Premium velosipedlar va professional aksessuarlar internet do'koni. O'zingizga mos mukammal velosipedni xarid qiling.">
+    <meta name="keywords" content="velosiped, mountain bike, road bike, e-bike, velosiped do'koni, AT bikes">
+    <meta name="author" content="AT Store">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b0f19'/><text x='50%' y='65%' font-family='sans-serif' font-size='55' font-weight='900' font-style='italic' fill='%232563eb' text-anchor='middle'>AT</text></svg>">
+    <title>AT · Premium Bicycle Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">AT</div>
+        <nav class="nav-links">
+            <a href="#hero">Bosh sahifa</a>
+            <a href="#categories">Kategoriyalar</a>
+            <a href="#trending">Trenddagilar</a>
+            <a href="#collection">Kolleksiya</a>
+            <a href="#accessories">Aksessuarlar</a>
+            <a href="#testimonials">Fikrlar</a>
+        </nav>
+        <div class="header-actions">
+            <button class="cart-btn" id="cartToggle">
+                🛒 Savat <span class="cart-badge" id="cartCount">0</span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="hero-content fade-in">
+            <span class="sub-title">AT · PREMIUM BICYCLES</span>
+            <h1>FIND YOUR PERFECT RIDE.</h1>
+            <p>Yuqori sifatli va zamonaviy velosipedlar hamda aksessuarlar to'plami.</p>
+            <div class="hero-btns">
+                <a href="#collection" class="btn-primary ripple">Xarid qilish</a>
+                <a href="#trending" class="btn-secondary">Batafsil</a>
+            </div>
+        </div>
+        <div class="hero-image float-anim">
+            <img src="img/Product photograph.png" alt="Hero">
+        </div>
+    </section>
+
+    <section class="section categories-section" id="categories">
+        <h2 class="section-title">Kategoriyalar bo'yicha qidiruv</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <div class="cat-img-box"><img src="img/Category photograph.png" alt="Road"></div>
+                <h4>Road Bikes</h4>
+            </div>
+            <div class="category-card">
+                <div class="cat-img-box"><img src="img/Category photograph (1).png" alt="Mountain"></div>
+                <h4>Mountain Bikes</h4>
+            </div>
+            <div class="category-card">
+                <div class="cat-img-box"><img src="img/Category photograph (2).png" alt="Electric"></div>
+                <h4>Electric Bikes</h4>
+            </div>
+            <div class="category-card">
+                <div class="cat-img-box"><img src="img/Category photograph (3).png" alt="Gravel"></div>
+                <h4>Gravel Bikes</h4>
+            </div>
+            <div class="category-card">
+                <div class="cat-img-box"><img src="img/Category photograph (4).png" alt="Urban"></div>
+                <h4>Urban / City</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="trending">
+        <div class="section-header">
+            <h2>Yangi va Trenddagi Velosipedlar</h2>
+            <a href="#collection" class="view-all">Barchasini ko'rish &rarr;</a>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="img-box"><img src="img/Product photograph (1).png" alt="Bike"></div>
+                <h3>AT Speedster Pro</h3>
+                <p class="price">$1,850</p>
+                <button class="add-to-cart-btn" data-id="1" data-name="AT Speedster Pro" data-price="1850">Savatga qo'shish</button>
+            </div>
+            <div class="product-card">
+                <div class="img-box"><img src="img/Product photograph.png" alt="Bike"></div>
+                <h3>Mountain Apex X</h3>
+                <p class="price">$2,100</p>
+                <button class="add-to-cart-btn" data-id="2" data-name="Mountain Apex X" data-price="2100">Savatga qo'shish</button>
+            </div>
+            <div class="product-card">
+                <div class="img-box"><img src="img/Product photograph (2).png" alt="Bike"></div>
+                <h3>Urban Stealth V2</h3>
+                <p class="price">$1,290</p>
+                <button class="add-to-cart-btn" data-id="3" data-name="Urban Stealth V2" data-price="1290">Savatga qo'shish</button>
+            </div>
+            <div class="product-card">
+                <div class="img-box"><img src="img/Product photograph (3).png" alt="Bike"></div>
+                <h3>E-Tourer Ultra</h3>
+                <p class="price">$3,400</p>
+                <button class="add-to-cart-btn" data-id="4" data-name="E-Tourer Ultra" data-price="3400">Savatga qo'shish</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="collection">
+        <div class="section-header">
+            <h2>To'liq Kolleksiya</h2>
+            <div class="filter-tabs">
+                <span class="tab active">Barchasi</span>
+                <span class="tab">Road</span>
+                <span class="tab">Mountain</span>
+                <span class="tab">Electric</span>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="img-box"><img src="img/Product photograph (4).png" alt="Bike"></div>
+                <h3>Aero Carbon R</h3>
+                <p class="price">$2,950</p>
+                <button class="add-to-cart-btn" data-id="5" data-name="Aero Carbon R" data-price="2950">Savatga qo'shish</button>
+            </div>
+            <div class="product-card">
+                <div class="img-box"><img src="img/Product photograph (5).png" alt="Bike"></div>
+                <h3>Gravel Pioneer</h3>
+                <p class="price">$1,600</p>
+                <button class="add-to-cart-btn" data-id="6" data-name="Gravel Pioneer" data-price="1600">Savatga qo'shish</button>
+            </div>
+            <div class="product-card">
+                <div class="img-box"><img src="img/Product photograph (6).png" alt="Bike"></div>
+                <h3>City Cruiser Light</h3>
+                <p class="price">$890</p>
+                <button class="add-to-cart-btn" data-id="7" data-name="City Cruiser Light" data-price="890">Savatga qo'shish</button>
+            </div>
+            <div class="product-card">
+                <div class="img-box"><img src="img/Product photograph (7).png" alt="Bike"></div>
+                <h3>Trail Blaster Enduro</h3>
+                <p class="price">$2,450</p>
+                <button class="add-to-cart-btn" data-id="8" data-name="Trail Blaster Enduro" data-price="2450">Savatga qo'shish</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section promo-section">
+        <div class="promo-card">
+            <div class="promo-content">
+                <h2>GO FURTHER.<br><span class="highlight">20% OFF.</span></h2>
+                <p>Mavsumiy chegirmada o'zingiz xohlagan velosipedni xarid qiling.</p>
+                <a href="#collection" class="btn-primary glow-btn">Hoziroq xarid qilish</a>
+            </div>
+            <div class="promo-img">
+                <img src="img/Cyclist campaign photograph.png" alt="Promo">
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="accessories">
+        <h2 class="section-title">Ekipirovka va Aksessuarlar</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="img-box"><img src="img/Equipment photograph.png" alt="Acc"></div>
+                <h3>AT Carbon Kaskasi</h3>
+                <p class="price">$140</p>
+                <button class="add-to-cart-btn" data-id="101" data-name="AT Carbon Kaskasi" data-price="140">Savatga qo'shish</button>
+            </div>
+            <div class="product-card">
+                <div class="img-box"><img src="img/Equipment photograph (1).png" alt="Acc"></div>
+                <h3>Sport Ko'zoynaklari</h3>
+                <p class="price">$85</p>
+                <button class="add-to-cart-btn" data-id="102" data-name="Sport Ko'zoynaklari" data-price="85">Savatga qo'shish</button>
+            </div>
+            <div class="product-card">
+                <div class="img-box"><img src="img/Equipment photograph (2).png" alt="Acc"></div>
+                <h3>Sport Qolqop</h3>
+                <p class="price">$220</p>
+                <button class="add-to-cart-btn" data-id="103" data-name="GPS Velokompyuter" data-price="220">Savatga qo'shish</button>
+            </div>
+            <div class="product-card">
+                <div class="img-box"><img src="img/Equipment photograph (3).png" alt="Acc"></div>
+                <h3>Termos Shisha (750ml)</h3>
+                <p class="price">$35</p>
+                <button class="add-to-cart-btn" data-id="104" data-name="Termos Shisha" data-price="35">Savatga qo'shish</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonials-section" id="testimonials">
+        <h2 class="section-title">Mijozlarimiz Fikrlari</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p>"AT velosipedlari sifati shunchaki ajoyib. Tez yetkazib berishdi!"</p>
+                <h5>— Davron K.</h5>
+            </div>
+            <div class="testimonial-card">
+                <p>"E-Bike oldim, batareyasi uzoqqa yetadi va ramasi juda yengil."</p>
+                <h5>— Sardor M.</h5>
+            </div>
+            <div class="testimonial-card">
+                <p>"Kaskasi ham, aksessuarlari ham juda sifatli tayyorlangan."</p>
+                <h5>— Aziza T.</h5>
+            </div>
+        </div>
+    </section>
+
+    <section class="section newsletter-section">
+        <div class="newsletter-box">
+            <h2>Yangiliklarga Obuna Bo'ling</h2>
+            <p>Chegirmalar va yangi mahsulotlar haqida birinchilardan bo'lib biling.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Obuna bo\'ldingiz!');">
+                <input type="email" placeholder="Email manzilingizni kiriting..." required>
+                <button type="submit" class="btn-primary">Obuna bo'lish</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Sizning Savatingiz</h3>
+                <span class="close-btn" id="closeCart">&times;</span>
+            </div>
+            <div class="cart-body" id="cartItems">
+                <p class="empty-cart-msg">Savat hozircha bo'sh.</p>
+            </div>
+            <div class="cart-footer">
+                <div class="total-row">
+                    <span>Jami summa:</span>
+                    <span>$<span id="totalPrice">0</span></span>
+                </div>
+                <button class="btn-primary checkout-btn" onclick="checkout()">Buyurtma berish</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo">AT</div>
+                <p>Premium darajadagi velosipedlar hamda professional aksessuarlar do'koni.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigatsiya</h4>
+                <a href="#hero">Bosh sahifa</a>
+                <a href="#categories">Kategoriyalar</a>
+                <a href="#collection">Kolleksiya</a>
+            </div>
+            <div class="footer-col">
+                <h4>Xizmatlar</h4>
+                <a href="#">Kafolat va Xizmat</a>
+                <a href="#">Yetkazib berish</a>
+                <a href="#">Qaytarish shartlari</a>
+            </div>
+            <div class="footer-col">
+                <h4>Bog'lanish</h4>
+                <p>Tel: +998 90 123 45 67</p>
+                <p>Email: info@at-bikes.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AT Premium Store. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
